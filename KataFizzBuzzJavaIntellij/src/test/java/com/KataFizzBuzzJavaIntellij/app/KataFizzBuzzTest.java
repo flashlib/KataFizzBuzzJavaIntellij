@@ -46,12 +46,12 @@ public class KataFizzBuzzTest {
         assertEquals("15 should say 'FizzBuzz'", KataFizzBuzz.WORD_FIZZ_BUZZ, KataFizzBuzz.sayNumber(15));
     }
 
-    //@Test
+    @Test
     public void thirteenShouldSayFizz(){
         assertEquals("13 should say 'Fizz'", KataFizzBuzz.WORD_FIZZ, KataFizzBuzz.sayNumber(13));
     }
 
-    //@Test
+    @Test
     public void thirtyoneShouldSayFizz(){
         assertEquals("31 should say 'Fizz'", KataFizzBuzz.WORD_FIZZ, KataFizzBuzz.sayNumber(31));
     }
@@ -65,5 +65,8 @@ public class KataFizzBuzzTest {
     public void sevenShouldSayWhizz(){
         assertEquals("7 should say 'Whizz'", KataFizzBuzz.WORD_WHIZZ, KataFizzBuzz.sayNumber(7));
     }
-
+    @Test
+    public void test130(){
+        assertEquals("130 should say 'FizzBuzz'", KataFizzBuzz.WORD_FIZZ_BUZZ, KataFizzBuzz.sayNumber(130));
+    }
 }

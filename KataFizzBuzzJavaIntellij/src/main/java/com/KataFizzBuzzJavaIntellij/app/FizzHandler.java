@@ -13,14 +13,12 @@ public class FizzHandler extends KataFizzBuzzHandler {
 
     @Override
     public String handle(int number) {
-        if (number % 3 ==0)
+        if (isFizzLikeNumber(number))
         {
             return "Fizz";
         }
-       else
-        {
-            return this.successor.handle(number);
 
-        }
+            return this.successor.handle(number);
     }
+
 }

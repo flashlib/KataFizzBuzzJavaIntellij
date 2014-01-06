@@ -14,4 +14,7 @@ public abstract class KataFizzBuzzHandler {
     }
 
 
+    protected boolean isFizzLikeNumber(int number) {
+        return number % 3 ==0||(""+number).contains("3");
+    }
 }

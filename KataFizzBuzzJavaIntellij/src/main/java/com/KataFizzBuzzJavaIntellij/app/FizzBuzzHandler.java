@@ -9,7 +9,7 @@ package com.KataFizzBuzzJavaIntellij.app;
 public class FizzBuzzHandler extends KataFizzBuzzHandler {
     @Override
     public String handle(int number) {
-        if(number%15==0) {
+        if(number%5==0 && isFizzLikeNumber(number)) {
             return "FizzBuzz";
         } else {
             return this.successor.handle(number);

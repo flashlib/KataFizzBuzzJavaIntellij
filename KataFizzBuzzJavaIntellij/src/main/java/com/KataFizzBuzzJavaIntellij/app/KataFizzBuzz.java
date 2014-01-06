@@ -40,6 +40,7 @@ public class KataFizzBuzz {
         KataFizzBuzzHandler fizzHandler = new FizzHandler(commonHandler);
         KataFizzBuzzHandler buzzHandler = new BuzzHandler(fizzHandler);
         KataFizzBuzzHandler fizzBuzzHandler = new FizzBuzzHandler(buzzHandler);
+
         return fizzBuzzHandler.handle(number);
 
     }
