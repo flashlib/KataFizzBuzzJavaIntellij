@@ -1,7 +1,5 @@
 package com.KataFizzBuzzJavaIntellij.app;
 
-import sun.management.counter.StringCounter;
-
 /**
  * Created by IntelliJ IDEA.
  * User: Jacky
@@ -37,8 +35,13 @@ public class KataFizzBuzz {
 //        }
 //        return s;
 
+
         KataFizzBuzzHandler commonHandler = new CommonHandler(null);
-        return commonHandler.handle(number);
+        KataFizzBuzzHandler fizzHandler = new FizzHandler(commonHandler);
+        KataFizzBuzzHandler buzzHandler = new BuzzHandler(fizzHandler);
+        KataFizzBuzzHandler fizzBuzzHandler = new FizzBuzzHandler(buzzHandler);
+        return fizzBuzzHandler.handle(number);
+
     }
 
     public static boolean includeNumber(int original, int num){

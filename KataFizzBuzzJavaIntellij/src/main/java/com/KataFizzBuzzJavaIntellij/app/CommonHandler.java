@@ -7,8 +7,9 @@ package com.KataFizzBuzzJavaIntellij.app;
  * Time: 下午4:03
  */
 public class CommonHandler extends KataFizzBuzzHandler {
+
     public CommonHandler(KataFizzBuzzHandler successor) {
-        this.successor = successor;
+        super(successor);
     }
 
     @Override

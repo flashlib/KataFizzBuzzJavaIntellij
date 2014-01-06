@@ -9,4 +9,9 @@ package com.KataFizzBuzzJavaIntellij.app;
 public abstract class KataFizzBuzzHandler {
     protected KataFizzBuzzHandler successor = null;
     public abstract String handle(int number);
+    public KataFizzBuzzHandler(KataFizzBuzzHandler successor) {
+        this.successor = successor;
+    }
+
+
 }
