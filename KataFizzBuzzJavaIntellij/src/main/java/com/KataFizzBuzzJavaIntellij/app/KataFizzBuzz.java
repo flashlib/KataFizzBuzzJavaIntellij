@@ -11,6 +11,9 @@ public class KataFizzBuzz {
         if(number==3){
             return  "Fizz";
         }
-        return "1";
+        if(number==5){
+            return  "Buzz";
+        }
+        return number+"";
     }
 }
