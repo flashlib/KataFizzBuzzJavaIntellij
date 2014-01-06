@@ -31,30 +31,37 @@ public class KataFizzBuzzTest {
     @Test
     public void threeShouldSayFizz(){
 
-        assertEquals("3 should say 'Fizz'", "Fizz", KataFizzBuzz.sayNumber(3));
+        assertEquals("3 should say 'Fizz'", KataFizzBuzz.WORD_FIZZ, KataFizzBuzz.sayNumber(3));
     }
 
     @Test
     public void fiveShouldSayBuzz(){
 
-        assertEquals("5 should say 'Buzz'", "Buzz", KataFizzBuzz.sayNumber(5));
+        assertEquals("5 should say 'Buzz'", KataFizzBuzz.WORD_BUZZ, KataFizzBuzz.sayNumber(5));
     }
 
     @Test
     public void sixShouldSayFizz(){
 
-        assertEquals("6 should say 'Fizz'", "Fizz", KataFizzBuzz.sayNumber(6));
+        assertEquals("6 should say 'Fizz'", KataFizzBuzz.WORD_FIZZ, KataFizzBuzz.sayNumber(6));
     }
 
     @Test
     public void tenShouldSayBuzz(){
 
-        assertEquals("10 should say 'Buzz'", "Buzz", KataFizzBuzz.sayNumber(10));
+        assertEquals("10 should say 'Buzz'", KataFizzBuzz.WORD_BUZZ, KataFizzBuzz.sayNumber(10));
     }
 
     @Test
     public void fifteenShouldSayFizzBuzz(){
 
-        assertEquals("15 should say 'FizzBuzz'", "FizzBuzz", KataFizzBuzz.sayNumber(15));
+        assertEquals("15 should say 'FizzBuzz'", KataFizzBuzz.WORD_FIZZ_BUZZ, KataFizzBuzz.sayNumber(15));
     }
+
+    @Test
+    public void howAboutThirteen(){
+
+        assertEquals("should return Fizz while giving 13", KataFizzBuzz.WORD_FIZZ, KataFizzBuzz.sayNumber(13));
+    }
+
 }
