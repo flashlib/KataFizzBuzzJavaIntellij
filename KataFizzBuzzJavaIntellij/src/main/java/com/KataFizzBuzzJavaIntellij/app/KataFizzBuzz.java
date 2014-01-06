@@ -16,46 +16,33 @@ public class KataFizzBuzz {
     public static final String WORD_FIZZ_BUZZ_WHIZZ = "FizzBuzzWhizz";
 
     public static String sayNumber(int number) {
-        //if(number%15 == 0){
-       //     return  WORD_FIZZ_BUZZ;
-        //}
-        boolean b = false;
-        String s = "";
+//        boolean b = false;
+//        String s = "";
+//
+//        if(number%3 == 0 || includeNumber(number,3)){
+//            s=WORD_FIZZ;
+//            b = true;
+//        }
+//        if(number%5 == 0 ){
+//            s+=WORD_BUZZ;
+//            b = true;
+//        }
+//        if(number%7 == 0 ){
+//            s+=WORD_WHIZZ;
+//            b = true;
+//        }
+//
+//        if(!b){
+//            s = String.valueOf(number);
+//        }
+//        return s;
 
-        if(number%3 == 0 || includeNumber(number,3)){
-            s=WORD_FIZZ;
-            b = true;
-        }
-        if(number%5 == 0 ){
-            s+=WORD_BUZZ;
-            b = true;
-        }
-        if(number%7 == 0 ){
-            s+=WORD_WHIZZ;
-            b = true;
-        }
-
-       // if (number==13){
-        //    return WORD_FIZZ;
-       // }
-        if(!b){
-            s = String.valueOf(number);
-        }
-        return s;
+        KataFizzBuzzHandler commonHandler = new CommonHandler(null);
+        return commonHandler.handle(number);
     }
 
     public static boolean includeNumber(int original, int num){
-
         String s = String.valueOf(original);
         return s.contains(String.valueOf(num));
-
-        //for(int i=0; i < s.length(); i++){
-        //    if(s.indexOf(i) == num){
-        //        return true;
-        //    }
-       // }
-
-       // return false;
-
     }
 }
