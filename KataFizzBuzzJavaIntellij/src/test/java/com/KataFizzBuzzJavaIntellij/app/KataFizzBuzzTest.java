@@ -59,9 +59,15 @@ public class KataFizzBuzzTest {
     }
 
     @Test
-    public void howAboutThirteen(){
+    public void thirteenShouldSayFizz(){
 
-        assertEquals("should return Fizz while giving 13", KataFizzBuzz.WORD_FIZZ, KataFizzBuzz.sayNumber(13));
+        assertEquals("13 should say 'Fizz'", KataFizzBuzz.WORD_FIZZ, KataFizzBuzz.sayNumber(13));
+    }
+
+    @Test
+    public void thirtyoneShouldSayFizz(){
+
+        assertEquals("31 should say 'Fizz'", KataFizzBuzz.WORD_FIZZ, KataFizzBuzz.sayNumber(31));
     }
 
 }
