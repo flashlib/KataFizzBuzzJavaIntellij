@@ -40,5 +40,10 @@ public class KataFizzBuzzTest {
         assertEquals("5 should say 'Buzz'", "Buzz", KataFizzBuzz.sayNumber(5));
     }
 
+    @Test
+    public void sixShouldSayFizz(){
+
+        assertEquals("6 should say 'Fizz'", "Fizz", KataFizzBuzz.sayNumber(6));
+    }
 
 }
