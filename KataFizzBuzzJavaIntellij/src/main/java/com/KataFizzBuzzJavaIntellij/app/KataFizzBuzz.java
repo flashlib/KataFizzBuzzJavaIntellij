@@ -12,6 +12,8 @@ public class KataFizzBuzz {
     public static final String WORD_BUZZ = "Buzz";
     public static final String WORD_FIZZ = "Fizz";
     public static final String WORD_FIZZ_BUZZ = "FizzBuzz";
+    public static final String WORD_WHIZZ = "Whizz";
+    public static final String WORD_FIZZ_BUZZ_WHIZZ = "FizzBuzzWhizz";
 
     public static String sayNumber(int number) {
         //if(number%15 == 0){
@@ -28,6 +30,11 @@ public class KataFizzBuzz {
             s+=WORD_BUZZ;
             b = true;
         }
+        if(number%7 == 0 ){
+            s+=WORD_WHIZZ;
+            b = true;
+        }
+
        // if (number==13){
         //    return WORD_FIZZ;
        // }
